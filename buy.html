@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/buy.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="index.jsp">
+      <img src="photo/logo.jpg"></a>
+  </header>
+  <nav>
+  
+      <ul>
+        <p>逐風</p>
+      </ul>
+        <div class="down">
+            <a href="aboutus.html">關於我們</a>
+        </div>
+        
+       
+          <div class="down1">
+              <button class="dropbtn">商品瀏覽</button>
+              <div class="dropdown-content">
+                  <a href="product.html">所有商品</a>
+                  <a href="lx.html">LX</a>
+                  <a href="Primavera.html">PRIMAVERA</a>
+                  <a href="Sprint.html">SPRINT</a>
+                  <a href="gts.html">GTS</a>
+              </div>
+          </div>
+
+          <div class="down2">
+              <a href="members.jsp" class="dropbtn">會員中心</a>
+              <div class="dropdown-content">
+                <a href="members.jsp">修改會員資料</a>
+            </div>
+          </div>
+          <div class="down3">
+            <a href="" class="dropbtn">留言板</a>
+            <div class="dropdown-content">
+              <a href="board.jsp">填寫留言</a>
+              <a href="view.jsp">留言紀錄</a>
+            </div>
+          </div>
+        </div>
+
+          <div class="search">
+              <form class="search_content" action="action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+          </div>
+
+  </nav>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+        
+          <div class="row">
+            
+  
+            <div class="col-50">
+              <h3>訂單確認</h3>
+              <label for="fname">可接受信用卡</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">姓名</label>
+              <input type="text" id="cname" name="cardname" placeholder="曾雯琪">
+              <label for="ccnum">地址</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="桃園市中壢區">
+              <label for="expmonth">電話</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="0900388566">
+              <div class="row">
+                <div class="col-50">
+                  <h3>付款方式</h3>
+            <p><select name="quan">
+              <option value="1">信用卡</option>
+              <option value="2">線上轉帳</option>
+              <option value="3">貨到付款</option>
+            </select>
+                </div></p>
+                
+              </div>
+            </div>
+            
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr">送貨地址與會員相同
+          </label>
+          <input type="button" value="完成付款" class="btn" onclick="location.href='thanks.html'" >
+        </form>
+      </div>
+    </div>
+    
+    <div class="col-25">
+      <div class="container">
+        <h4>購物車<span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+        <p><img class="pic"src="photo/lx-ash.jpg"><a href="lx.html">LX 125 Euro 5</a> <span class="price">NT$ 121,900</span></p>
+        <p><img class="pic"src="photo/gts-ash.jpg"><a href="gts.html">GTS 300 Super Sport Euro 5</a> <span class="price">NT$ 305,000</span></p>
+        <hr>
+        <p>總計<span class="price" style="color:black"><b>NT$ 426,900</b></span></p>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+  </div>
+  <footer class="footer">Copyright © since 2022 Vespa All Rights Reserved.
+  </footer>
+  
+</body>
+</html>

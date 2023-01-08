@@ -1,0 +1,202 @@
+header img {
+    width: 13%;
+    height: 13%;
+    float: left;
+}
+
+nav {
+    font-size: larger;
+    font-family: Yu Gothic UI;
+}
+
+ul p {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 4%;
+    left: 17%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 8%;
+    overflow: hidden;
+    background-color: #333;
+    letter-spacing: 10px;
+
+
+}
+
+.down a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.down a:hover {
+    background-color: #111;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+    text-decoration: none;
+    letter-spacing: 10px;
+}
+
+.down {
+    position: absolute;
+    top: 23.5%;
+    left: 17%;
+    display: inline-block;
+    letter-spacing: 10px;
+}
+
+
+.down1 {
+    position: absolute;
+    top: 23.5%;
+    left: 30%;
+    display: inline-block;
+
+}
+
+.down2 {
+    position: absolute;
+    top: 26.5%;
+    left: 43%;
+    display: inline-block;
+}
+
+.down3 {
+    position: absolute;
+    left: 56%;
+    top: 26.5%;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 153px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    background-color: white
+}
+
+.down1:hover .dropdown-content,
+.down2:hover .dropdown-content,
+.down3:hover .dropdown-content {
+    display: block;
+}
+
+.down1:hover .dropbtn,
+.down2:hover .dropbtn,
+.down3:hover .dropbtn {
+    background-color: black;
+}
+
+.search {
+    position: absolute;
+    top: 24.5%;
+    left: 70%;
+}
+
+form.search_content input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 50%;
+    background: white;
+}
+
+/* Style the submit button */
+form.search_content button {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.search_content button:hover {
+    background: black;
+}
+
+/* Clear floats */
+form.search_content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.icon-bar {
+    display: flex;
+}
+
+.icon_member {
+    position: absolute;
+    left: 87%;
+    top: 22.5%;
+
+}
+
+.icon_cart {
+    position: absolute;
+    left: 93%;
+    top: 22.3%;
+}
+
+.hot {
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    /*外層高度100%*/
+    margin-bottom: -50px;
+    /*隨footer高度需做調整*/
+}
+
+.footer {
+    height: 100px;
+    /*設定footer本身高度*/
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    top: 100%;
+}

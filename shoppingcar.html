@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>購物車</title>
+  <link rel="stylesheet" type="text/css" href="css/shoppingcar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+</head>
+
+<body>
+  <header>
+    <a href="index.jsp">
+      <img src="photo/logo.jpg"></a>
+  </header>
+  <nav>
+  
+      <ul>
+        <p>逐風</p>
+      </ul>
+        <div class="down">
+            <a href="aboutus.html">關於我們</a>
+        </div>
+        
+        <div class="down1">
+              <button class="dropbtn">商品瀏覽</button>
+              <div class="dropdown-content">
+                  <a href="product.html">所有商品</a>
+                  <a href="lx.jsp">LX</a>
+                  <a href="Primavera.jsp">PRIMAVERA</a>
+                  <a href="Sprint.jsp">SPRINT</a>
+                  <a href="gts.jsp">GTS</a>
+              </div>
+          </div>
+
+          <div class="down2">
+              <a href="members.jsp" class="dropbtn">會員中心</a>
+              <div class="dropdown-content">
+                <a href="members.jsp">修改會員資料</a>
+                <a href="#order">訂單紀錄</a>
+                <a href="#comment">評論</a>
+            </div>
+          </div>
+
+            <div class="down3">
+                <a href="" class="dropbtn">留言板</a>
+                <div class="dropdown-content">
+                    <a href="board.jsp">填寫留言</a>
+                    <a href="view.jsp">留言紀錄</a>
+                  </div>
+            </div>
+          </div>
+
+          <div class="search">
+              <form class="search_content" action="action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+          </div>
+  </nav>
+
+
+<div class="box"><a href="#">TOP</a></div>
+  <div class="title">購物車</div>
+  <hr>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="margin:45px auto;">
+          <img class="img" src="photo/lx-green.jpg">
+        </div>
+        
+            <form>
+                <div class="content1">
+                  <h5>LX 125 Euro 5</h5>
+                  <h5>NT$ 121,900</h5>
+                  <h5>購買數量：1</h5>
+                  <h5>單項商品總價:NT$ 121,900</h5>
+                  <div class="input">
+                    <div class="wrapper">
+                        <span class="minus">-</span>
+                        <span class="num">01</span>
+                        <span class="plus">+</span>
+                    </div><br>
+                    
+                    <button class="btn1">從購物車中刪除</button>
+                  </div>
+                </div>
+            </form>
+          </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-sm-6" style="margin:0px auto;">
+          <img class="img" src="photo/gts-ash.jpg">
+        </div>
+        
+        
+            <form>
+                <div class="content2">
+                  <h5>GTS 300 Super Sport Euro 5</h5>
+                  <h5>NT$ 305,000</h5>
+                  <h5>購買數量：1</h5>
+                  <h5>單項商品總價：NT$ 305,000</h5>
+                  <div class="input">
+                    <div class="wrapper">
+                        <span class="minus">-</span>
+                        <span class="num">01</span>
+                        <span class="plus">+</span>
+                    </div><br>
+                    <button class="btn2">從購物車中刪除</button>
+                  </div>
+              </div>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <div class="text-center">
+      <a href="buy.html"><button class="btn3">確認訂單</button> </a>
+    </div>
+  </div>
+
+  <footer class="footer">Copyright © since 2022 Vespa All Rights Reserved.</footer>
+  <script>
+
+    const plus=document.querySelector(".plus"),
+    minus=document.querySelector(".minus"),
+    num=document.querySelector(".num");
+
+    let a =1;
+
+    plus.addEventListener("click",()=>{
+        a++;
+        a=(a<10)?"0"+a:a;
+        num.innerText=a;
+        console.log("a");
+    });
+
+    minus.addEventListener("click",()=>{
+        if(a>1){
+            a--;
+            a=(a<10)?"0"+a:a;
+        num.innerText=a;
+
+
+        }
+    });
+
+</script>
+
+</body>
+
+</html>

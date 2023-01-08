@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 50px;
+
+}
+
+section {
+    text-align: center;
+    background-color: #E3E3E3;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: dashed;
+    border-width: 5px;
+
+}
+
+.photo {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+    border: #8C8C8C;
+    border-style: double;
+    border-width: 8px;
+}
+
+.photo:hover {
+    transform: scale(1.2, 1.2);
+}

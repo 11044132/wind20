@@ -1,0 +1,19 @@
+.title {
+    background-color: black;
+    color: white;
+}
+
+table {
+    width: 60%;
+    text-align: center;
+    position: relative;
+    left: 20%;
+}
+
+.content {
+    background-color: #FCFCFC;
+}
+
+h3 {
+    text-align: center;
+}
